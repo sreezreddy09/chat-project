@@ -1,0 +1,1 @@
+var cnctApp = angular.module('cnctApp', []);

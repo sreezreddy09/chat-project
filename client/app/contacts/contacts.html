@@ -1,0 +1,17 @@
+<div id="offcanvas-search" class="offcanvas-pane width-8">
+	<div class="offcanvas-head">
+		<header class="text-primary">Search</header>
+		<div class="offcanvas-tools">
+			<a class="btn btn-icon-toggle btn-default-light pull-right" data-dismiss="offcanvas">
+				<i class="md md-close"></i>
+			</a>
+		</div>
+	</div>
+	<div class="offcanvas-body no-padding" ng-controller = "cnctCtrl">
+		<ul class="list">
+			<li class="tile" ng-repeat = 'w in personInfo'>
+				<contact-list person = 'w'></contact-list>
+			</li>
+		</ul>
+	</div>
+</div>
