@@ -1,1 +1,1 @@
-var cnctApp = angular.module('cnctApp', []);
+var cnctApp = angular.module('cnctApp', ['ngScrollbar']);

@@ -5,7 +5,7 @@ function cnctCtrl($scope){
 	{
 	'name' : 'Alex Nelson',
 	'number' : '123-123-3210',
-	'imgSrc' : 'http://www.codecovers.eu/assets/img/modules/materialadmin/avatar4.jpg?1422538625'
+	'imgSrc' : 'client/assets/img/modules/materialadmin/avatar4.jpg'
 	},
 	{
 	'name' : 'Ann Laurens',
@@ -54,3 +54,4 @@ function cnctCtrl($scope){
 	}
 ];
 }
+

@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html ng-app ='cnctApp'>
 <head>
+	<style>
+		.offcanvas-search .offcanvas-body .list {
+			overflow: visible !important;
+		}
+	</style>
 <!--	Vendor CSS files-->
 	<link href="client/js/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet"> 
 	<link href="client/js/lib/font-awesome/css/font-awesome.min.css"  rel="stylesheet"> 
@@ -18,10 +23,12 @@
 	<script type="text/javascript" src="client/js/lib/jquery/dist/jquery.min.js"></script>
 	<script type="text/javascript" src="client/js/lib/angular/angular.min.js"></script>
 	<script type="text/javascript" src="client/js/lib/angular-route/angular-route.min.js"></script>
+	<script type="text/javascript" src="client/js/lib/ng-scrollbar/dist/ng-scrollbar.min.js"></script>
 	
 <!--	Project JS files-->
 	<script type="text/javascript" src="client/app/layout/layout.js"></script>
 <!--<script type="text/javascript" src="client/app/contacts/cnctDirective.js"></script>-->
+	<script type="text/javascript" src="client/app/layout/shellCtrl.js"></script>
 	<script type="text/javascript" src="client/app/contacts/controller.js"></script>
 </body>
 </html>

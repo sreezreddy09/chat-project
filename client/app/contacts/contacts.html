@@ -1,18 +1,21 @@
 <div id="offcanvas-search" class="offcanvas-pane width-8">
-	<div class="offcanvas-head">
-		<header class="text-primary">Search</header>
-		<div class="offcanvas-tools">
-			<a class="btn btn-icon-toggle btn-default-light pull-right" data-dismiss="offcanvas">
-				<i class="md md-close"></i>
-			</a>
-		</div>
+	
+<!--
+	<div class="offcanvas-head headerbar-left">
+		<form class="form">
+			<div class="form-group floating-label">
+				<textarea name="sidebarChatMessage" id="sidebarChatMessage" class="form-control autosize" rows="1"></textarea>
+				<label for="sidebarChatMessage">Search</label>
+			</div>
+		</form>
 	</div>
+-->
 	<div class="offcanvas-body no-padding" ng-controller = "cnctCtrl">
 		<ul class="list" >
 			<li class="tile" ng-repeat = "w in personInfo">
 				<a class="tile-content ink-reaction" href="#offcanvas-chat" data-toggle="offcanvas" data-backdrop="false">
 					<div class="tile-icon">
-						<img src={{w.imgSrc}} alt="" />
+						<img src='{{w.imgSrc}}' alt="" />
 					</div>
 					<div class="tile-text">
 						{{w.name}}
