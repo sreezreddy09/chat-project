@@ -3,20 +3,21 @@
 	<div>
 		<div ng-include = "'client/app/layout/navbar.html'"></div>
 	</div>
-	<div id="content">
-		<div id="offcanvas-tab" class="offcanvas-pane width-8">
-	<ul class="header-nav header-nav-options text-primary">
-		<li>
-			<button type="submit" ng-click= "showGroups()" class="btn btn-icon-toggle button-default"><i class="fa fa-users fa-lg"></i></button>Groups
-		</li>
-		<li>
-			<button type="submit" ng-click= "showContacts()" class="btn btn-icon-toggle button-default"><i class="fa fa-user fa-lg"></i></button>Contacts
-		</li>
-	</ul>
-	</div>
-	<div ng-if = "!messageOne" ng-include = "'client/app/contacts/contacts.html'"></div>
-	<div ng-if = "!messageTwo" ng-include = "'client/app/groups/groups.html'"></div>
-	
-		<div class="mainbar" ng-view ></div>
+	<div id="content" class = 'row'>
+		<div class="col-md-3">
+			<div id="offcanvas-tab" class="offcanvas-pane ">
+				<ul class="header-nav header-nav-options text-primary">
+					<li>
+						<button type="submit" ng-click= "showGroups()" class="btn btn-icon-toggle button-default"><i class="fa fa-users fa-lg"></i></button>Groups
+					</li>
+					<li>
+						<button type="submit" ng-click= "showContacts()" class="btn btn-icon-toggle button-default"><i class="fa fa-user fa-lg"></i></button>Contacts
+					</li>
+				</ul>
+			</div>
+			<div ng-if = "!messageOne" ng-include = "'client/app/contacts/contacts.html'"></div>
+			<div ng-if = "!messageTwo" ng-include = "'client/app/groups/groups.html'"></div>
+		</div>
+		<div class="mainbar col-md-6 container well" ng-view > Hello World</div>
 	</div>
 </div>
