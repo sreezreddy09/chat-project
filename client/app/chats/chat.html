@@ -1,0 +1,18 @@
+<div id="offcanvas-chat" class="offcanvas-pane style-default-light width-16" ng-controller = 'chatCtrl'>
+	<div class="offcanvas-head style-default-bright">
+		<header class="text-primary">Chat with {{name}}</header>
+			<div class="nano has-scrollbar" style="height: 73vh;">
+				<div class="nano-content" tabindex="0" style="right: -17px;">
+				</div>
+				<div class="nano-pane">
+					<div class="nano-slider" style="height: 73vh;"></div>
+				</div>
+			</div>
+		<form class="form">
+			<div class="form-group floating-label">
+				<textarea name="sidebarChatMessage" id="sidebarChatMessage" class="form-control autosize" rows="1"></textarea>
+				<label for="sidebarChatMessage">Leave a message</label>
+			</div>
+		</form>
+	</div>
+</div>

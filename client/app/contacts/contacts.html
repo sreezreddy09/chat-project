@@ -1,4 +1,4 @@
-<div id="offcanvas-search" class="offcanvas-pane" ng-controller = "cnctCtrl">
+<div id="offcanvas-search-contacts" class="offcanvas-pane" ng-controller = "cnctCtrl">
 	
 <!--
 	<div class="offcanvas-head headerbar-left">
@@ -10,19 +10,26 @@
 		</form>
 	</div>
 -->
-	<div class="offcanvas-body no-padding" >
-		<ul class="list" >
-			<li class="tile" ng-repeat = "w in personInfo">
-				<a class="tile-content ink-reaction" href="#offcanvas-chat" data-toggle="offcanvas" data-backdrop="false">
-					<div class="tile-icon">
-						<img src='{{w.imgSrc}}' alt="" />
-					</div>
-					<div class="tile-text">
-						{{w.name}}
-						<small>{{w.number}}</small>
-					</div>
-				</a>
-			</li>
-		</ul>
+	<div class="nano has-scrollbar" style="height: 80vh;">
+		<div class="nano-content" tabindex="0" style="right: -17px;">
+			<div class="offcanvas-body no-padding" >
+				<ul class="list" >
+					<li class="tile" ng-repeat = "w in personInfo">
+						<a class="tile-content ink-reaction" ng-click="onPersonClick(w)" data-toggle="offcanvas" data-backdrop="false">
+							<div class="tile-icon">
+								<img src='{{w.imgSrc}}' alt="" />
+							</div>
+							<div class="tile-text">
+								{{w.name}}
+								<small>{{w.number}}</small>
+							</div>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="nano-pane">
+			<div class="nano-slider" style="height: 80vh;"></div>
+		</div>
 	</div>
 </div>
