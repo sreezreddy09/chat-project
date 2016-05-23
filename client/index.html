@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html ng-app ='cnctApp'>
+<head>
+<!--	Vendor CSS files-->
+	<link href="js/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet"> 
+	<link href="js/lib/font-awesome/css/font-awesome.min.css"  rel="stylesheet"> 
+	<link href="js/lib/material-design-iconic-font/dist/css/material-design-iconic-font.min.css" rel="stylesheet">
+<!--	Project CSS files-->
+	<link href="js/css/material-admin.css" rel="stylesheet">	
+	<style>
+		body {
+			overflow: hidden;
+		}
+		#chat-wallpaper {
+			background-color: #DFDFDF;
+/*
+			background-image: url(assets/img/modules/chat-background/chat-wallpaper.png);
+			background-repeat: repeat;
+			background-attachment: fixed;
+*/
+			
+		}
+	</style>
+</head>
+<body class="menubar-hoverable header-fixed ">
+	<div>
+        <div ng-include="'app/layout/shell.html'"></div>
+    </div>
+<!--	Vendor JS files-->
+	<script type="text/javascript" src="js/lib/jquery/dist/jquery.min.js"></script>
+	<script type="text/javascript" src="js/lib/angular/angular.min.js"></script>
+	<script type="text/javascript" src="js/lib/angular-route/angular-route.min.js"></script>
+	
+<!--	Project JS files-->
+	<script type="text/javascript" src="app/layout/layout.js"></script>
+	<script type="text/javascript" src="app/chats/chat.js"></script>
+<!--<script type="text/javascript" src="app/contacts/cnctDirective.js"></script>-->
+	<script type="text/javascript" src="app/layout/shellCtrl.js"></script>
+	<script type="text/javascript" src="app/contacts/contacts.js"></script>
+</body>
+</html>
